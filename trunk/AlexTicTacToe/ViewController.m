@@ -43,6 +43,11 @@
 @synthesize PlayernameLabel1;
 @synthesize PlayerNamelabel2;
 
+
+@synthesize PlayerInfoLabel1;
+@synthesize PlayerInfoLabel2;
+
+
 @synthesize EnterNameView;
 
 - (void)viewDidLoad {
@@ -52,6 +57,13 @@
     loader.hidden = YES;// i dnot need this
     EnterNameView.hidden = NO;
     [self askForPlayerName];
+    
+    
+    //rotate labels for better play experience ;)
+    
+    [PlayerInfoLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
+    [PlayernameLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
+    
     
     //set delegate to self
     [Player1TextField setDelegate:self];

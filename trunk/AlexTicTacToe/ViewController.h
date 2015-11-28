@@ -11,6 +11,8 @@
 #include "ScoreBoard.h"
 @interface ViewController : UIViewController  <UITextFieldDelegate>
 @property  int player; // needed for writh logic; 
+@property (weak, nonatomic) IBOutlet UILabel *PlayerInfoLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *PlayerInfoLabel2;
 
 @property (weak, nonatomic) IBOutlet UIView *EnterNameView;
 
