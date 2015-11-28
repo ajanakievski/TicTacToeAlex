@@ -18,6 +18,7 @@
 		FA293ED71C079A9F005F8C42 /* AlexTicTacToeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA293ED61C079A9F005F8C42 /* AlexTicTacToeUITests.m */; };
 		FA293EE81C07ADD6005F8C42 /* ScoreBoard+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA293EE51C07ADD6005F8C42 /* ScoreBoard+CoreDataProperties.m */; };
 		FA293EE91C07ADD6005F8C42 /* ScoreBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA293EE71C07ADD6005F8C42 /* ScoreBoard.m */; };
+		FA9427B01C0A584400A813D7 /* AJ_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9427AF1C0A584400A813D7 /* AJ_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FA293EE51C07ADD6005F8C42 /* ScoreBoard+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScoreBoard+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FA293EE61C07ADD6005F8C42 /* ScoreBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreBoard.h; sourceTree = "<group>"; };
 		FA293EE71C07ADD6005F8C42 /* ScoreBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoard.m; sourceTree = "<group>"; };
+		FA9427AF1C0A584400A813D7 /* AJ_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AJ_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		FA293EAE1C079A9F005F8C42 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA9427AF1C0A584400A813D7 /* AJ_logo.png */,
 				FA293EAF1C079A9F005F8C42 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA293EC11C079A9F005F8C42 /* LaunchScreen.storyboard in Resources */,
+				FA9427B01C0A584400A813D7 /* AJ_logo.png in Resources */,
 				FA293EBE1C079A9F005F8C42 /* Assets.xcassets in Resources */,
 				FA293EB91C079A9F005F8C42 /* Main.storyboard in Resources */,
 			);
@@ -514,6 +518,7 @@
 				FA293EDD1C079A9F005F8C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA293EDE1C079A9F005F8C42 /* Build configuration list for PBXNativeTarget "AlexTicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				FA293EE01C079A9F005F8C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA293EE11C079A9F005F8C42 /* Build configuration list for PBXNativeTarget "AlexTicTacToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				FA293EE31C079A9F005F8C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
