@@ -82,10 +82,6 @@
     //write out all the cases
     //checking for text on button; It can be changer to anyting(image tag...)
     // Wins for X
-    ///bug when ...
-    //oxo
-    //xox
-    //oox
     // cheking if we have a win is from youtube tutorial https://www.youtube.com/watch?v=mqEz6B-Mz2I
     
     
@@ -208,12 +204,14 @@
     
     
     //turn is over; check for winner
+    //it works only with after delay ... i guess it needs time to register that button text been changed.
+    
 [self performSelector:@selector(checkforWinCases) withObject:nil afterDelay:1.0f];
   //  [self checkforWinCases];
     
     if(drawCount == 9){
         // all moves made, no win , thous draw
-        NSLog(@"Draw");
+     //   NSLog(@"Draw");
         
 //        NSString *message3 = [NSString stringWithFormat:@"We have a Draw! Nobody won! please try again %@ , %@", PlayerName1, PlayerName2];
 //        UIAlertView *alert5 = [[UIAlertView alloc]initWithTitle: @"Rough Game! "
@@ -224,7 +222,8 @@
 //        
 //        [alert5 setTag:5];
 //        [alert5 show];
-        [self resetQuadrants];
+     //   [self resetQuadrants];
+        [self performSelector:@selector(resetQuadrants) withObject:nil afterDelay:1.0f];
     }
 }
 
@@ -281,16 +280,8 @@
     
     //Set the names
     [PlayernameLabel1 setText:PlayerName1];
-  //  [PlayernameLabel1 setText:[NSString stringWithFormat:@"%@ Plays with X", PlayerName1]];
     [PlayerNamelabel2 setText:PlayerName2];
-  //  [PlayerNamelabel2 setText:[NSString stringWithFormat:@"%@ Plays with O", PlayerName2]];
     [self setInitialPointer];
-    
-    //reset the score
-//    ScoreLabel1 =0;
-//    ScoreLabel2 =0;
-
-    
     EnterNameView.hidden = YES;
     
 }
@@ -301,7 +292,8 @@
     Pointer2.hidden =YES;
 }
 
-// get rid of the keyboard on return clicked !!! can't make this work !!!!!! - yes it works now after setting delegate //to self.
+// get rid of the keyboard on return clicked !!! can't make this work !!!!!! - yes it works now after setting delegate to self.
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
    // [textField resignFirstResponder];
