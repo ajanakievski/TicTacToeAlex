@@ -99,17 +99,18 @@
         (([[quadrant3 titleLabel]text] == [[quadrant6 titleLabel]text]) && ([[quadrant3 titleLabel]text] == [[quadrant9 titleLabel]text]) && ([[[quadrant3 titleLabel]text]  isEqual: @"X"]))) {
         quadrant1.enabled = NO; quadrant2.enabled = NO; quadrant3.enabled = NO; quadrant4.enabled = NO; quadrant5.enabled = NO; quadrant6.enabled = NO; quadrant7.enabled = NO; quadrant8.enabled = NO; quadrant9.enabled = NO;
         //resets quadrants in 1 sec
-        [self performSelector:@selector(resetQuadrants) withObject:nil afterDelay:1.0f];
+       // [self performSelector:@selector(resetQuadrants) withObject:nil afterDelay:1.0f];
+        [self resetQuadrants];
         NSLog(@"X won");
-        NSString *message1 = [NSString stringWithFormat:@"Player X %@ Won!", PlayerName1];
-        UIAlertView *alert3 = [[UIAlertView alloc]initWithTitle: @"Congratulations!!! We have a Winner!"
-                                                       message: message1
-                                                      delegate: self
-                                             cancelButtonTitle:@"OK"
-                                             otherButtonTitles:nil];
-        
-        [alert3 setTag:3];
-        [alert3 show];
+//        NSString *message1 = [NSString stringWithFormat:@"Player X %@ Won!", PlayerName1];
+//        UIAlertView *alert3 = [[UIAlertView alloc]initWithTitle: @"Congratulations!!! We have a Winner!"
+//                                                       message: message1
+//                                                      delegate: self
+//                                             cancelButtonTitle:@"OK"
+//                                             otherButtonTitles:nil];
+//        
+//        [alert3 setTag:3];
+//        [alert3 show];
         playerScore1 ++;
         [ScoreLabel1 setText:[NSString stringWithFormat:@"%i",playerScore1]];
         
@@ -126,17 +127,18 @@
         (([[quadrant2 titleLabel]text] == [[quadrant5 titleLabel]text]) && ([[quadrant2 titleLabel]text] == [[quadrant8 titleLabel]text]) && ([[[quadrant2 titleLabel]text]  isEqual: @"O"])) ||
         (([[quadrant3 titleLabel]text] == [[quadrant6 titleLabel]text]) && ([[quadrant3 titleLabel]text] == [[quadrant9 titleLabel]text]) && ([[[quadrant3 titleLabel]text]  isEqual: @"O"]))) {
         quadrant1.enabled = NO; quadrant2.enabled = NO; quadrant3.enabled = NO; quadrant4.enabled = NO; quadrant5.enabled = NO; quadrant6.enabled = NO; quadrant7.enabled = NO; quadrant8.enabled = NO; quadrant9.enabled = NO;
-        [self performSelector:@selector(resetQuadrants) withObject:nil afterDelay:1.0f];
-        NSLog(@"O won");
-        NSString *message2 = [NSString stringWithFormat:@"Player O %@ Won!", PlayerName2];
-        UIAlertView *alert4 = [[UIAlertView alloc]initWithTitle: @"Congratulations!!! We have a Winner!"
-                                                       message: message2
-                                                      delegate: self
-                                             cancelButtonTitle:@"OK"
-                                             otherButtonTitles:nil];
-        
-        [alert4 setTag:4];
-        [alert4 show];
+       // [self performSelector:@selector(resetQuadrants) withObject:nil afterDelay:1.0f];
+        [self resetQuadrants];
+//        NSLog(@"O won");
+//        NSString *message2 = [NSString stringWithFormat:@"Player O %@ Won!", PlayerName2];
+//        UIAlertView *alert4 = [[UIAlertView alloc]initWithTitle: @"Congratulations!!! We have a Winner!"
+//                                                       message: message2
+//                                                      delegate: self
+//                                             cancelButtonTitle:@"OK"
+//                                             otherButtonTitles:nil];
+//        
+//        [alert4 setTag:4];
+//        [alert4 show];
         
         playerScore2++;
         [ScoreLabel2 setText:[NSString stringWithFormat:@"%i",playerScore2] ];
@@ -205,20 +207,22 @@
     
     
     //turn is over; check for winner
-    [self checkforWinCases];
+[self performSelector:@selector(checkforWinCases) withObject:nil afterDelay:1.0f];
+  //  [self checkforWinCases];
+    
     if(drawCount == 9){
         // all moves made, no win , thous draw
         NSLog(@"Draw");
         
-        NSString *message3 = [NSString stringWithFormat:@"We have a Draw! Nobody won! please try again %@ , %@", PlayerName1, PlayerName2];
-        UIAlertView *alert5 = [[UIAlertView alloc]initWithTitle: @"Rough Game! "
-                                                        message: message3
-                                                       delegate: self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        
-        [alert5 setTag:5];
-        [alert5 show];
+//        NSString *message3 = [NSString stringWithFormat:@"We have a Draw! Nobody won! please try again %@ , %@", PlayerName1, PlayerName2];
+//        UIAlertView *alert5 = [[UIAlertView alloc]initWithTitle: @"Rough Game! "
+//                                                        message: message3
+//                                                       delegate: self
+//                                              cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//        
+//        [alert5 setTag:5];
+//        [alert5 show];
         [self resetQuadrants];
     }
 }
@@ -228,15 +232,6 @@
     //clearing up text fields
     Player1TextField =nil;
     Player2TextField =nil;
-    
-
-    
-    
-    //clear score
-//    playerScore1 =0;
-//    playerScore2 =0;
-    
-    
     EnterNameView.hidden =NO;
 }
 
@@ -291,8 +286,8 @@
     [self setInitialPointer];
     
     //reset the score
-    ScoreLabel1 =0;
-    ScoreLabel2 =0;
+//    ScoreLabel1 =0;
+//    ScoreLabel2 =0;
 
     
     EnterNameView.hidden = YES;
@@ -357,5 +352,13 @@
     
     [self askForPlayerName];
     
+    //resset to placeholder
+    PlayerNameTextField1.text =nil;
+    PlayerNameTextFiled2.text =nil;
+    [self resetQuadrants];
+    playerScore1 =0;
+    [ScoreLabel1 setText:[NSString stringWithFormat:@"%i",playerScore1]];
+    playerScore2 = 0;
+    [ScoreLabel2 setText:[NSString stringWithFormat:@"%i",playerScore2]];
 }
 @end
