@@ -24,12 +24,17 @@
 @property(nonatomic,retain) IBOutlet UIButton *quadrant4;
 @property(nonatomic,retain) IBOutlet UIButton *quadrant5;
 @property(nonatomic,retain) IBOutlet UIButton *quadrant6;
+@property (strong, nonatomic) IBOutlet UIView *MainViewView;
+@property (weak, nonatomic) IBOutlet UIImageView *Pointer1;
+@property (weak, nonatomic) IBOutlet UIImageView *Pointer2;
 
 
 @property(nonatomic,retain) IBOutlet UIButton *quadrant7;
 @property(nonatomic,retain) IBOutlet UIButton *quadrant8;
 @property(nonatomic,retain) IBOutlet UIButton *quadrant9;
 
+@property (weak, nonatomic) IBOutlet UILabel *ScoreLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *ScoreLabel2;
 @property (nonatomic,retain) IBOutlet UIActivityIndicatorView *loader;
 
 @property (weak, nonatomic) IBOutlet UITextField *Player1TextField;

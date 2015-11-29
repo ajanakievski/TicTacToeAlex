@@ -47,8 +47,13 @@
 @synthesize PlayerInfoLabel1;
 @synthesize PlayerInfoLabel2;
 
+@synthesize ScoreLabel1;
+@synthesize ScoreLabel2;
+
+@synthesize MainViewView;
 
 @synthesize EnterNameView;
+@synthesize Pointer1, Pointer2;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,7 +68,13 @@
     
     [PlayerInfoLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
     [PlayernameLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
+    [ScoreLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
+    [Pointer1 setTransform:CGAffineTransformMakeRotation(-M_PI / 2)];
+
     
+    //set the background
+    
+   MainViewView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background7.jpg"]];
     
     //set delegate to self
     [Player1TextField setDelegate:self];
