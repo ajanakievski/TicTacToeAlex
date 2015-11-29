@@ -23,6 +23,6 @@ You are required to implement a fully-functioning version of TicTacToe
 
 Requirements
 - You are required to use git for versioning (link the code on your Github/Bitbucket account)
-- Feel free to use any 3rd party code to help you get the task done more effectively (this must be documented) // Used code for deciding win situation (was too lazy to write it myself :)), all the other code is mine
+- Feel free to use any 3rd party code to help you get the task done more effectively (this must be documented) // Used code for deciding win situation, all the other code is mine
 - iPhone5 or higher is used as testing device // Game looks good on any iPhone... on iPad its bit small with a lot of wasted space (apple recomends using deferent storyboards for iPad, but didnt have time to do this).
 
