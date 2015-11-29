@@ -164,6 +164,7 @@
     [quadrant7 setTitle:@" " forState:UIControlStateNormal]; [quadrant7 setEnabled:YES];
     [quadrant8 setTitle:@" " forState:UIControlStateNormal]; [quadrant8 setEnabled:YES];
     [quadrant9 setTitle:@" " forState:UIControlStateNormal]; [quadrant9 setEnabled:YES];
+    [self setInitialPointer];
 
 }
 
