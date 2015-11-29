@@ -40,6 +40,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *Player1TextField;
 @property (weak, nonatomic) IBOutlet UITextField *Player2TextField;
+- (IBAction)LogoTAP:(id)sender;
 
 @property (nonatomic, assign) int drawCount;
 @property (weak, nonatomic) IBOutlet UILabel *PlayernameLabel1;
@@ -62,8 +63,8 @@
 
 @property (nonatomic, copy) NSString* PlayerName1;
 @property (nonatomic, copy) NSString* PlayerName2;
-@property (nonatomic,assign) double playerScore1;
-@property (nonatomic,assign) double playerScore2;
+@property (nonatomic,assign) int playerScore1;
+@property (nonatomic,assign) int playerScore2;
 
 
 @end
