@@ -26,32 +26,21 @@
 @synthesize quadrant7;
 @synthesize quadrant8;
 @synthesize quadrant9;
-
-
 @synthesize loader;
-
 @synthesize drawCount;
-
-
 @synthesize PlayerName1;
 @synthesize PlayerName2;
 @synthesize playerScore1;
 @synthesize playerScore2;
-
 @synthesize Player1TextField;
 @synthesize Player2TextField;
 @synthesize PlayernameLabel1;
 @synthesize PlayerNamelabel2;
-
-
 @synthesize PlayerInfoLabel1;
 @synthesize PlayerInfoLabel2;
-
 @synthesize ScoreLabel1;
 @synthesize ScoreLabel2;
-
 @synthesize MainViewView;
-
 @synthesize EnterNameView;
 @synthesize Pointer1, Pointer2;
 
@@ -64,23 +53,26 @@
     [self askForPlayerName];
     
     
-    //rotate labels for better play experience ;)
+    //for dismissing the keyboard
+    // Player1TextField.returnKeyType = UIReturnKeyDone;
+    [Player1TextField setDelegate:self];
+  
     
+    
+    //rotate labels for better play experience ;)
     [PlayerInfoLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
     [PlayernameLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
     [ScoreLabel1 setTransform:CGAffineTransformMakeRotation(-M_PI / 1)];
     [Pointer1 setTransform:CGAffineTransformMakeRotation(-M_PI / 2)];
 
     
-    //set the background
-    
-   MainViewView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background7.jpg"]];
-    
     //set delegate to self
     [Player1TextField setDelegate:self];
     [Player2TextField setDelegate:self];
     
-    
+    //set initial pointer
+    [self setInitialPointer];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -188,7 +180,8 @@
     UIButton *pressedquadrant = (UIButton *) sender; // where user pressed
     [pressedquadrant setEnabled:NO];
 
-    
+    Pointer1.hidden = YES;
+    Pointer2.hidden = YES;
 
     
     switch (player) {
@@ -199,11 +192,17 @@
             player = 2 ;
             // change player
             
+            //navigate the pointer
+            Pointer1.hidden = YES;
+            Pointer2.hidden = NO;
+            
             drawCount ++;
             break;
         case 2:
             [pressedquadrant setTitle:@"O" forState:UIControlStateNormal];
             player = 1;
+            Pointer1.hidden =NO;
+            Pointer2.hidden = YES;
             drawCount ++;
             break;
         default:
@@ -236,15 +235,7 @@
     //clearing up text fields
     Player1TextField =nil;
     Player2TextField =nil;
-    
-//    //cleanging label name
-//    PlayernameLabel1 =nil;
-//    PlayerNamelabel2 =nil;
-    
     EnterNameView.hidden =NO;
-    
-    
-    
 }
 
 
@@ -298,14 +289,60 @@
 
     
     EnterNameView.hidden = YES;
-    
-
 }
 
-// get rid of the keyboard on return clicked !!! cant make it work
+-(void) setInitialPointer
+{
+    Pointer1.hidden =NO;
+    Pointer2.hidden =YES;
+}
+
+// get rid of the keyboard on return clicked !!! can't make this work !!!!!!
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [textField resignFirstResponder];
+   // [textField resignFirstResponder];
+    [self.view endEditing:YES];
     return YES;
+}
+
+
+- (IBAction)OverlayTAP:(id)sender {
+    // [Player1TextField resignFirstResponder];
+    [self.view endEditing:YES];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+  //  activeField = nil;
+}
+
+- (IBAction)ThemeSelected1:(id)sender {
+    //set the background
+    MainViewView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background12.jpg"]];
+    [self DonButtonTAP:(self)];
+}
+
+- (IBAction)ThemeSelected2:(id)sender {
+    //set the background
+    MainViewView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background6.jpg"]];
+    [self DonButtonTAP:(self)];
+}
+
+- (IBAction)ThemeSelected3:(id)sender {
+    //set the background
+    MainViewView.backgroundColor = [UIColor whiteColor];
+    [self DonButtonTAP:(self)];
+}
+
+- (IBAction)ThemeSelected4:(id)sender {
+    //set the background
+    MainViewView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background7.jpg"]];
+    [self DonButtonTAP:(self)];
+}
+
+- (IBAction)ThemeSelected5:(id)sender {
+    //set the background
+    MainViewView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background11.jpg"]];
+    [self DonButtonTAP:(self)];
 }
 @end

@@ -27,7 +27,8 @@
 @property (strong, nonatomic) IBOutlet UIView *MainViewView;
 @property (weak, nonatomic) IBOutlet UIImageView *Pointer1;
 @property (weak, nonatomic) IBOutlet UIImageView *Pointer2;
-
+@property (weak, nonatomic) IBOutlet UIButton *OverlayOusideTAP;
+- (IBAction)OverlayTAP:(id)sender;
 
 @property(nonatomic,retain) IBOutlet UIButton *quadrant7;
 @property(nonatomic,retain) IBOutlet UIButton *quadrant8;
@@ -39,10 +40,22 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *Player1TextField;
 @property (weak, nonatomic) IBOutlet UITextField *Player2TextField;
+
 @property (nonatomic, assign) int drawCount;
 @property (weak, nonatomic) IBOutlet UILabel *PlayernameLabel1;
 - (IBAction)DonButtonTAP:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *PlayerNamelabel2;
+@property (weak, nonatomic) IBOutlet UITextField *PlayerNameTextField1;
+@property (weak, nonatomic) IBOutlet UITextField *PlayerNameTextFiled2;
+
+- (IBAction)ThemeSelected1:(id)sender;
+- (IBAction)ThemeSelected2:(id)sender;
+- (IBAction)ThemeSelected3:(id)sender;
+- (IBAction)ThemeSelected4:(id)sender;
+- (IBAction)ThemeSelected5:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *ThemeSelected4;
+
+
 
 // not time to write out the core data and manage the objects
 //simple string variables used for plays name and score tracking

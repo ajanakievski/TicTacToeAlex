@@ -43,15 +43,15 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="AJ_logo.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqS-qh-g09" userLabel="ScoreLabel1">
-                                <rect key="frame" x="290" y="130" width="20" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqS-qh-g09" userLabel="ScoreLabel1">
+                                <rect key="frame" x="293" y="129" width="13" height="23"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrA-7Z-aUY" userLabel="ScoreLabel2">
-                                <rect key="frame" x="284" y="450" width="31" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrA-7Z-aUY" userLabel="ScoreLabel2">
+                                <rect key="frame" x="293" y="449" width="13" height="23"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -232,16 +232,111 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBd-MA-VFU" userLabel="OverlayView">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhO-7U-53b" userLabel="DoneButton">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click on the icon to reset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2F-Iu-K8Y" userLabel="OverlayInfo3">
+                                        <rect key="frame" x="279" y="430" width="42" height="20.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Have FUN!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-Jb-qhr" userLabel="OverlayInfo4">
+                                        <rect key="frame" x="279" y="280.5" width="42" height="20.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPy-st-P4Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="OverlayTAP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQY-nu-bOF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player Names" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqg-x1-Ful" userLabel="OverlayInfo1">
+                                        <rect key="frame" x="225" y="100" width="149.5" height="20.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And choose your theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCN-6s-dRB" userLabel="OverlayInfo2">
+                                        <rect key="frame" x="209" y="280.5" width="182.5" height="20.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnT-KZ-sOJ" userLabel="Theme1">
+                                        <rect key="frame" x="155" y="345" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ATN-bu-ZUh"/>
+                                            <constraint firstAttribute="height" constant="50" id="h8t-Nm-a0W"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="background12.jpg"/>
+                                        <connections>
+                                            <action selector="ThemeSelected1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cY-bW-iJc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2t-rC-Qhk" userLabel="Theme2">
+                                        <rect key="frame" x="215" y="345" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Q4u-iZ-hRw"/>
+                                            <constraint firstAttribute="height" constant="50" id="qlD-7L-Usu"/>
+                                        </constraints>
+                                        <state key="normal" image="background6.jpg"/>
+                                        <connections>
+                                            <action selector="ThemeSelected2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ee-Ge-ynk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czI-1J-W2Y" userLabel="Theme3">
+                                        <rect key="frame" x="275" y="345" width="50" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TKd-gc-PoW"/>
+                                            <constraint firstAttribute="width" constant="50" id="sFA-19-m82"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="ThemeSelected3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OFr-SF-U8a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IO-mW-EbI" userLabel="Theme4">
+                                        <rect key="frame" x="335" y="345" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ACw-Zr-q4r"/>
+                                            <constraint firstAttribute="width" constant="50" id="Ujj-o8-bZ0"/>
+                                        </constraints>
+                                        <state key="normal" image="background7.jpg"/>
+                                        <connections>
+                                            <action selector="ThemeSelected4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MjL-Ca-Nrx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSj-8D-Jo8" userLabel="Theme5">
+                                        <rect key="frame" x="395" y="345" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="315-z5-QVH"/>
+                                            <constraint firstAttribute="height" constant="50" id="XUF-ej-DBZ"/>
+                                        </constraints>
+                                        <state key="normal" image="background11.jpg"/>
+                                        <connections>
+                                            <action selector="ThemeSelected5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cQn-rj-4Bw"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhO-7U-53b" userLabel="DoneButton">
                                         <rect key="frame" x="260" y="425" width="80" height="50"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="UiA-w7-x6x"/>
                                             <constraint firstAttribute="height" constant="50" id="ozv-3O-pZc"/>
                                         </constraints>
                                         <state key="normal" title="DONE">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="highlighted" title="DONE">
@@ -252,7 +347,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter player 1 name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uMN-LD-vCm" userLabel="PlayerName1">
-                                        <rect key="frame" x="200" y="175" width="200" height="30"/>
+                                        <rect key="frame" x="200" y="155" width="200" height="30"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Vdg-81-STQ"/>
@@ -262,7 +357,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter player 2 name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-Jd-7Ha" userLabel="PlayerName2">
-                                        <rect key="frame" x="200" y="355" width="200" height="30"/>
+                                        <rect key="frame" x="200" y="195" width="200" height="30"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="aoM-rl-uuJ"/>
@@ -273,12 +368,34 @@
                                     </textField>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.85023082386363635" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="c2t-rC-Qhk" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" constant="-60" id="0Yz-gg-vBV"/>
+                                    <constraint firstItem="O2F-Iu-K8Y" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="150" id="306-9O-CbW"/>
+                                    <constraint firstItem="bCN-6s-dRB" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="3Ui-jR-MCS"/>
+                                    <constraint firstItem="LSj-8D-Jo8" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="80" id="6qv-yc-1mk"/>
                                     <constraint firstItem="AhO-7U-53b" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="AIK-D6-pUr"/>
-                                    <constraint firstItem="yGJ-Jd-7Ha" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="80" id="RYs-M2-0QQ"/>
+                                    <constraint firstItem="9IO-mW-EbI" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" constant="60" id="BdX-qN-WWH"/>
+                                    <constraint firstItem="iqg-x1-Ful" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="DR4-YB-vhB"/>
+                                    <constraint firstItem="9IO-mW-EbI" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="80" id="E7m-MK-U9j"/>
+                                    <constraint firstItem="O2F-Iu-K8Y" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="GZ1-ah-G62"/>
+                                    <constraint firstItem="tPy-st-P4Z" firstAttribute="top" secondItem="hBd-MA-VFU" secondAttribute="top" id="JU5-CS-ayM"/>
+                                    <constraint firstItem="tPy-st-P4Z" firstAttribute="leading" secondItem="hBd-MA-VFU" secondAttribute="leading" id="MGZ-U3-sFJ"/>
+                                    <constraint firstItem="iqg-x1-Ful" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="-180" id="N3S-7B-eoz"/>
+                                    <constraint firstItem="czI-1J-W2Y" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="80" id="QPk-db-82P"/>
+                                    <constraint firstItem="yGJ-Jd-7Ha" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="-80" id="RYs-M2-0QQ"/>
+                                    <constraint firstItem="czI-1J-W2Y" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="TnG-Gg-zB0"/>
+                                    <constraint firstItem="bCN-6s-dRB" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" id="V42-md-NLy"/>
+                                    <constraint firstItem="qnT-KZ-sOJ" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" constant="-120" id="aJ0-PY-w69"/>
+                                    <constraint firstItem="LSj-8D-Jo8" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" constant="120" id="bUn-Ow-CWP"/>
+                                    <constraint firstItem="qnT-KZ-sOJ" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="80" id="ce7-Xd-VFd"/>
+                                    <constraint firstItem="PrV-Jb-qhr" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="170" id="exP-Ug-dg5"/>
+                                    <constraint firstAttribute="bottom" secondItem="tPy-st-P4Z" secondAttribute="bottom" id="fMc-kN-M9s"/>
+                                    <constraint firstItem="PrV-Jb-qhr" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="fgh-Sc-tw8"/>
                                     <constraint firstItem="uMN-LD-vCm" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="fuK-sZ-7al"/>
-                                    <constraint firstItem="uMN-LD-vCm" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="-100" id="sIJ-DX-Yj0"/>
+                                    <constraint firstAttribute="trailing" secondItem="tPy-st-P4Z" secondAttribute="trailing" id="lZX-8R-vU3"/>
+                                    <constraint firstItem="c2t-rC-Qhk" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="80" id="qp0-LT-eJ8"/>
+                                    <constraint firstItem="uMN-LD-vCm" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="-120" id="sIJ-DX-Yj0"/>
                                     <constraint firstItem="yGJ-Jd-7Ha" firstAttribute="centerX" secondItem="hBd-MA-VFU" secondAttribute="centerX" id="yxC-Xt-JkJ"/>
                                     <constraint firstItem="AhO-7U-53b" firstAttribute="centerY" secondItem="hBd-MA-VFU" secondAttribute="centerY" constant="160" id="zeT-gp-2v2"/>
                                 </constraints>
@@ -338,16 +455,20 @@
                     <connections>
                         <outlet property="EnterNameView" destination="hBd-MA-VFU" id="H2e-cZ-IQ7"/>
                         <outlet property="MainViewView" destination="8bC-Xf-vdC" id="cz1-02-fTD"/>
+                        <outlet property="OverlayOusideTAP" destination="tPy-st-P4Z" id="pgb-Qb-Z9q"/>
                         <outlet property="Player1TextField" destination="uMN-LD-vCm" id="pWt-Wc-3eJ"/>
                         <outlet property="Player2TextField" destination="yGJ-Jd-7Ha" id="b2r-Uq-mO3"/>
                         <outlet property="PlayerInfoLabel1" destination="RgU-QG-3gb" id="gph-qd-GxA"/>
                         <outlet property="PlayerInfoLabel2" destination="xyf-bi-pLM" id="FHK-ZX-j1z"/>
+                        <outlet property="PlayerNameTextField1" destination="uMN-LD-vCm" id="qub-RC-scb"/>
+                        <outlet property="PlayerNameTextFiled2" destination="yGJ-Jd-7Ha" id="7PY-nb-tyD"/>
                         <outlet property="PlayerNamelabel2" destination="RZC-3S-nOt" id="YeT-jq-pem"/>
                         <outlet property="PlayernameLabel1" destination="kyY-OJ-zJt" id="x4T-GS-iHb"/>
                         <outlet property="Pointer1" destination="xjL-FH-dUR" id="TLu-Ch-zc7"/>
                         <outlet property="Pointer2" destination="WPe-nd-U38" id="y0N-Mg-Aox"/>
                         <outlet property="ScoreLabel1" destination="CqS-qh-g09" id="WMe-sL-HtQ"/>
                         <outlet property="ScoreLabel2" destination="NrA-7Z-aUY" id="5f6-qM-zq5"/>
+                        <outlet property="ThemeSelected4" destination="9IO-mW-EbI" id="YI0-TX-9YW"/>
                         <outlet property="loader" destination="uPy-gy-TyJ" id="0MN-ez-Qbj"/>
                         <outlet property="quadrant1" destination="XIM-2F-bmD" id="xeV-n7-Yhl"/>
                         <outlet property="quadrant2" destination="5cs-cz-RBn" id="UDm-0E-f1h"/>
@@ -367,6 +488,10 @@
     </scenes>
     <resources>
         <image name="AJ_logo.png" width="496" height="436"/>
+        <image name="background11.jpg" width="750" height="641"/>
+        <image name="background12.jpg" width="552" height="294"/>
+        <image name="background6.jpg" width="496" height="426"/>
+        <image name="background7.jpg" width="209" height="242"/>
         <image name="pointer2.png" width="512" height="512"/>
         <image name="pointer4.png" width="512" height="512"/>
     </resources>

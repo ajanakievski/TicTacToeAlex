@@ -30,6 +30,10 @@
 		FA9427C51C0B66C400A813D7 /* pointer2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9427C21C0B66C400A813D7 /* pointer2.png */; };
 		FA9427C61C0B66C400A813D7 /* pointer3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9427C31C0B66C400A813D7 /* pointer3.png */; };
 		FA9427C81C0B6DD100A813D7 /* pointer4.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9427C71C0B6DD100A813D7 /* pointer4.png */; };
+		FA9427CD1C0B7D3900A813D7 /* background9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9427C91C0B7D3900A813D7 /* background9.jpg */; };
+		FA9427CE1C0B7D3900A813D7 /* background10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9427CA1C0B7D3900A813D7 /* background10.jpg */; };
+		FA9427CF1C0B7D3900A813D7 /* background11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9427CB1C0B7D3900A813D7 /* background11.jpg */; };
+		FA9427D01C0B7D3900A813D7 /* background12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9427CC1C0B7D3900A813D7 /* background12.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		FA9427C21C0B66C400A813D7 /* pointer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2.png; sourceTree = "<group>"; };
 		FA9427C31C0B66C400A813D7 /* pointer3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer3.png; sourceTree = "<group>"; };
 		FA9427C71C0B6DD100A813D7 /* pointer4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer4.png; sourceTree = "<group>"; };
+		FA9427C91C0B7D3900A813D7 /* background9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background9.jpg; sourceTree = "<group>"; };
+		FA9427CA1C0B7D3900A813D7 /* background10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background10.jpg; sourceTree = "<group>"; };
+		FA9427CB1C0B7D3900A813D7 /* background11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background11.jpg; sourceTree = "<group>"; };
+		FA9427CC1C0B7D3900A813D7 /* background12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background12.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,10 @@
 				FA9427B71C0B605A00A813D7 /* background7.jpg */,
 				FA9427B81C0B605A00A813D7 /* background8.jpg */,
 				FA9427C71C0B6DD100A813D7 /* pointer4.png */,
+				FA9427C91C0B7D3900A813D7 /* background9.jpg */,
+				FA9427CA1C0B7D3900A813D7 /* background10.jpg */,
+				FA9427CB1C0B7D3900A813D7 /* background11.jpg */,
+				FA9427CC1C0B7D3900A813D7 /* background12.jpg */,
 				FA293EAF1C079A9F005F8C42 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -299,8 +311,12 @@
 				FA9427BC1C0B605A00A813D7 /* background4.jpg in Resources */,
 				FA293EBE1C079A9F005F8C42 /* Assets.xcassets in Resources */,
 				FA9427B91C0B605A00A813D7 /* background1.jpg in Resources */,
+				FA9427CE1C0B7D3900A813D7 /* background10.jpg in Resources */,
+				FA9427CD1C0B7D3900A813D7 /* background9.jpg in Resources */,
+				FA9427CF1C0B7D3900A813D7 /* background11.jpg in Resources */,
 				FA9427C51C0B66C400A813D7 /* pointer2.png in Resources */,
 				FA9427BA1C0B605A00A813D7 /* background2.jpg in Resources */,
+				FA9427D01C0B7D3900A813D7 /* background12.jpg in Resources */,
 				FA293EB91C079A9F005F8C42 /* Main.storyboard in Resources */,
 				FA9427BE1C0B605A00A813D7 /* background6.jpg in Resources */,
 				FA9427C41C0B66C400A813D7 /* pointer1.png in Resources */,

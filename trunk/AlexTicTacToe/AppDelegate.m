@@ -123,5 +123,10 @@
         }
     }
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)aTextField
+{
+    [aTextField resignFirstResponder];
+    return YES;
+}
 
 @end
